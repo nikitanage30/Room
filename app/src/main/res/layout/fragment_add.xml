@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:padding="24dp"
+             tools:context=".fragments.add.AddFragment">
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:inputType="textPersonName"
+            android:hint="@string/first_name"
+            android:ems="10"
+            android:id="@+id/add_firstName_et"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:inputType="textPersonName"
+            android:hint="@string/last_name"
+            android:ems="10"
+            android:id="@+id/add_LastName_et"
+            app:layout_constraintTop_toBottomOf="@+id/add_firstName_et"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:inputType="number"
+            android:hint="@string/age"
+            android:ems="10"
+            android:id="@+id/add_age_txt"
+            app:layout_constraintTop_toBottomOf="@+id/add_LastName_et"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"/>
+    <Button
+            android:text="@string/add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/add_btn"
+            app:layout_constraintTop_toBottomOf="@+id/add_age_txt"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="24dp" app:layout_constraintHorizontal_bias="0.498"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

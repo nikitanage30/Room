@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:padding="24dp"
+             tools:context=".fragments.update.UpdateFragment">
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:inputType="textPersonName"
+            android:hint="@string/first_name"
+            android:ems="10"
+            android:id="@+id/update_firstName_et"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:inputType="textPersonName"
+            android:hint="@string/last_name"
+            android:ems="10"
+            android:id="@+id/update_LastName_et"
+            app:layout_constraintTop_toBottomOf="@+id/update_firstName_et"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:inputType="number"
+            android:hint="@string/age"
+            android:ems="10"
+            android:id="@+id/update_age_txt"
+            app:layout_constraintTop_toBottomOf="@+id/update_LastName_et"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"/>
+    <Button
+            android:text="@string/update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/update_btn"
+            app:layout_constraintTop_toBottomOf="@+id/update_age_txt"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="24dp" app:layout_constraintHorizontal_bias="0.498"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
